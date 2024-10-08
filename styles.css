@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin: auto;
+    padding: 20px;
+    width:40%;
+    background-color: #f1f1f1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content {
+    padding: 10px;
+}
+.header{
+    padding: 10px;
+    text-align: center;
+}
+.myBalance{
+    margin:auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+#balance {
+    font-size: 30px;
+    margin-top: 5px;
+}
+div#income, div#expense {
+    margin: 10px;
+}
+.display {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+}
+#income{
+    color: green;
+}
+#expense{
+    color: red;
+}
+.history{
+    margin: 10px;
+}
+h2#historyName {
+    margin-bottom: 10px;
+}
+button#element {
+    width: 30%;
+    color: white;
+    background-color: green;
+    margin-bottom: 15px;
+    /* display: none; */
+}
+input#amount, input#note {
+    width: 100%;
+    font-size: 15px;
+    padding: 4px;
+    margin-bottom: 10px;;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(65,170,189);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.label1{
+    margin:5px 0px;
+}

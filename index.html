@@ -4,31 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Expense Tracker</h1>
-    </div>
+    <div class="main">
+        <div class="content">
+            <div class="header">
+                <h1>Expense Tracker</h1>
+            </div>
+            
+            <div class="myBalance">
+                <h3>My Balance</h3>
+                ₹<p id="balance" style="display: inline-block;">0000</p>
+            </div>
+            
+            <div class="display">
+                <div class="income">
+                    <h2>Income</h2>
+                    ₹<p id="income" style="display: inline-block;">0000</p>
+                </div>
+                <div class="expense">
+                    <h2>Expense</h2>
+                    ₹<p id="expense" style="display: inline-block;">0000</p>
+                </div>
+            </div>
     
-    <div class="myBalance">
-        <h2>My Balance</h2>
-        <div id="balance">₹0000</div>
+            <h2 id="historyName">History</h2>
+            <div id="history">
+                <!-- <button id="element">
+                    <span id="entry">
+                        <p id="title">Title</p>
+                        <p id="previous">20</p>
+                    </span>
+                </button> -->
+            </div>
+            <hr>
+        
+            <div class="new">
+                <h3>Add new transaction</h3>
+                <label class="label1">Amount</label>
+                <p>(no sign: income, negative sign: expense)</p>
+                <input type="number" id="amount" placeholder="Enter Amount">
+        
+                <label class="label1">Note</label>
+                <input type="text" id="note" placeholder="Enter note about transaction">
+                <button id="submit" onclick="addTransaction()">Add transaction</button>
+            </div>
+        </div>
     </div>
-
-    <div class="history">
-        <h2>History</h2>
-        <hr>
-    </div>
-
-    <div class="new">
-        <h2>Add new transaction</h2>
-        <label>Amount</label>
-        <p>no sign: income, negative sign: expense</p>
-        <input type="number" id="amount" placeholder="Enter Amount">
-
-        <label>Note</label>
-        <input type="number" id="note" placeholder="Enter note about transaction">
-        <input type="submit" value="Add transaction" onclick="addTransaction()">
-    </div>
+    <script src="index.js"></script>
 </body>
 </html>
